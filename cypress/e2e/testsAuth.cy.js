@@ -2,6 +2,7 @@ describe('Tests de autenticación', () => {
   beforeEach(function () {})
 
   it('Verificar campos vacios', ()=>{
+    cy.clearCookies()
     cy.visit('http://192.168.0.26')
     cy.get('button[type="submit"]').click()
     cy.url().should('contain','/auth/login/')
