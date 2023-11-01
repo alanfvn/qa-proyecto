@@ -1,30 +1,31 @@
 # Pruebas para realizar
-## Pruebas de login
+## Modulo de autenticación
 
-- Credenciales incorectos
-- Credenciales corectas
-- Completo y vacio 
-- Prueba de minusculas y mayusculas
+- Verificar inicio de sesión:
+    - Colocar usuario
+    - Colocar password
+    - Clicker botón de inicio de sesión.
+
+- Credenciales incorectos -> dondde los campos no son validos en el registrop del usuario
+- Credenciales corectas -> donde las campos si son validos en el registro del usuaio
+- Completo y vacio -> donde las casillas no encuentra ningun texto o caracter
+- Prueba de minusculas y mayusculas ->  donde se compruba si los usuarios es creado en minuscula y se coloca en mayuscula
 
 ## prueba de acceso a modulos
 
 - pruba de rederisacion a mudulos:
 
-Esto implica que se va a realizar pruebas en todos los módulos, y en cada módulo se podrá hacer clic
+Esto implica que se va a realizar pruebas en todos los módulos, y en cada módulo se podrá hacer clic dando acceso.
 
 ## Pruebas en modulo reportes
 
 - Agregar un reporte
-- crickear el boton reporte
-- Crikear el boton cancelar
-- Crikear el boton inicoi 
-- Crikear el boton voler al inicio
+- Volver al inicio
 - Campos vacios 
 - Botom imprimir
 - Boton iditar
 - Boton eliminar
-- Busqueda de informe
-- Botn anterior y suuente
+- Busqueda de informe   
 
 ## Prueba en modulo informes
 
@@ -52,6 +53,24 @@ Esto implica que se va a realizar pruebas en todos los módulos, y en cada módu
 
 ### modulo del modulo servicios
 
-- Agregar recurso
-- Volver al incio
-- BOton
+- Creacion servicio
+- Volve al inicio
+- boton editar
+- Boton eliminar
+- Validacion de campos 
+
+### modulo del modulo Vehiculo
+
+- Crear vehiculo
+- volver al inicio
+- Boton editar
+- Boton eliminar
+- Validacion de campos 
+
+### modulo del modulo hospital
+
+- Crear hospital
+- volver al inicio
+- Boton editar
+- Boton eliminar
+- Validacion de campos
