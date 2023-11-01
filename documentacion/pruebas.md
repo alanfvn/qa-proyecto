@@ -1,12 +1,7 @@
-# Pruebas para realizar
-## Modulo de autenticación
+# Set de pruebas
 
-- Verificar inicio de sesión con *credenciales CORRECTAS*
-    - Colocar usuario
-    - Colocar password
-    - Hacer click al botón de inicio de sesión.
-
-- Verificar inicio de sesión con *credenciales INCORRECTAS*
+## Tests de autenticación
+- Verificar inicio de sesión con *credenciales VACÍAS*
     - No colocar nada en el campo de usuario.
     - No colocar nada en el campo de password.
     - Hacer click al botón de inicio de sesión.
@@ -16,66 +11,76 @@
     - Colocar password.
     - Hacer click al botón de inicio de sesión.
 
-## prueba de acceso a módulos
+- Verificar inicio de sesión con *credenciales CORRECTAS*
+    - Colocar usuario
+    - Colocar password
+    - Hacer click al botón de inicio de sesión.
 
-- pruba de rederisacion a mudulos:
+- Verificación de cerrar sesión
+    - Hacer click en "cerra sesión"
 
-Esto implica que se va a realizar pruebas en todos los módulos, y en cada módulo se podrá hacer clic dando acceso.
+## Tests de navegación
+- Verificación de navegación
+    - Ingreso al módulo de reporte
+    - Ingreso al módulo de informes
+    - Ingreso al módulo de personal
+    - Ingreso al modulo de recurso
+        - Acceso a sub modulo de personal
+        - Acceso a sub modulo de vehículos
+        - Acceso a Sub modulo de hospitales
 
-## Pruebas en modulo reportes
+## Tests al modulo de reportes
 
+### Formulario (crear)
+- Campos vacíos
+- Crear reporte
+
+### Formulario (editar)
+- Campos vacíos
+- Editar reporte
+
+### Funcionalidad
 - Agregar un reporte
-- Volver al inicio
-- Campos vacios 
-- Botom imprimir
-- Boton iditar
-- Boton eliminar
-- Busqueda de informe   
+- Generar pdf de un reporte
+- Filtrado de reporte
+- Eliminar un reporte
 
-## Prueba en modulo informes
+## Tests al modulo de informes
+- Imprimir informe vació
+- Filtrar por todos los tipos de servicios
+- Filtrar por servició especifico
+- Filtrar por fecha
+    - Mes actual 
+    - Rango de fecha erróneo
+- Búsqueda por tabla
+- Imprimir informe filtrado
 
-- clikear el filtrado
-- clikear el reporte
-- Clikerar en el sigueinte y anteriro
-- Secretaria
-- tipos de servcicos unitarios y especifico
-- Validacion de fechas
+## Tets al modulo de personal
+- Verificar campos vacíos
+- Agregar usuario
+- Editar usuario
+- Eliminar usuario
 
-## Prubas en modulo personal
 
-- Boton agrega usuario
-- Boton Volver al inicio
-- Boton etidar
-- Boton eliminar
-- filtrado de usuairo
-- Prueba de campos
-- VAlidacion de campos vacios en contraseña
-- Validacion de acaracteres en el campo contraseña
+## Tests al modulo de recursos
 
-## prueba de modulo de recurso
+### Tests de Sub modulo de *Servicios*
+- Crear servicio
+    - Verificar campos
+- Editar servicio
+    - Verificar campos
+- Eliminar servicio 
 
-- check list de recurso (Servicios, Vehiculos, Hospitales)
+### Tests al Sub modulo de *Vehículos*
+- Crear vehículos
+    - Verificar campos
+- Editar vehículos
+    - Verificar campos
+- Eliminar vehículos 
 
-### modulo del modulo servicios
-
-- Creacion servicio
-- Volve al inicio
-- boton editar
-- Boton eliminar
-- Validacion de campos 
-
-### modulo del modulo Vehiculo
-
-- Crear vehiculo
-- volver al inicio
-- Boton editar
-- Boton eliminar
-- Validacion de campos 
-
-### modulo del modulo hospital
-
-- Crear hospital
-- volver al inicio
-- Boton editar
-- Boton eliminar
-- Validacion de campos
+### Tests al Sub modulo de *Hospitales*
+- Crear hospitales
+    - Verificar campos
+- Editar hospitales
+    - Verificar campos
+- Eliminar hospitales 
