@@ -1,32 +1,22 @@
 # Pruebas para realizar
 ## Modulo de autenticación
 
-- Verificar inicio de sesión:
+- Verificar inicio de sesión con *credenciales CORRECTAS*
     - Colocar usuario
     - Colocar password
-    - Clicker botón de inicio de sesión.
+    - Hacer click al botón de inicio de sesión.
 
-- Credenciales incorrectos
-    - Colocar usuario no registrado
-    - Colocar password
-    - Clicker botón de inicio de sesión.
+- Verificar inicio de sesión con *credenciales INCORRECTAS*
+    - No colocar nada en el campo de usuario.
+    - No colocar nada en el campo de password.
+    - Hacer click al botón de inicio de sesión.
 
-- Credenciales correctas
-    - Colocar usuario registrado 
-    - Colocar password
-    - Clicker botón de inicio de sesión.
+- Verificar inicio de sesión (usuario con mayúsculas)
+    - Colocar usuario con mayúsculas.
+    - Colocar password.
+    - Hacer click al botón de inicio de sesión.
 
-- Completo y vació
-    - no colocar nada en el usuario
-    - no colocar nada en el passwor
-    - Clicker botón de inicio de sesión.
-
-- Prueba de minusculas y mayusculas 
-    - Colocar usuario opuesto al creado
-    - Colocar password
-    - Clicker botón de inicio de sesión.
-
-## prueba de acceso a modulos
+## prueba de acceso a módulos
 
 - pruba de rederisacion a mudulos:
 
