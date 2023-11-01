@@ -31,19 +31,17 @@
 
 ## Tests al modulo de reportes
 
-### Formulario (crear)
-- Campos vacíos
-- Crear reporte
-
-### Formulario (editar)
-- Campos vacíos
-- Editar reporte
-
 ### Funcionalidad
-- Agregar un reporte
-- Generar pdf de un reporte
+- Crear reporte
+    - Verificar campos vacíos
+    - Guardar cambios
+- Editar reporte
+    - Verificar campos vacíos
+    - Guardar cambios
+- Generar PDF de un reporte
 - Filtrado de reporte
 - Eliminar un reporte
+
 
 ## Tests al modulo de informes
 - Imprimir informe vació
@@ -55,32 +53,40 @@
 - Búsqueda por tabla
 - Imprimir informe filtrado
 
-## Tets al modulo de personal
-- Verificar campos vacíos
+## Tests al modulo de personal
 - Agregar usuario
+    - Verificar campos vacíos
+    - Guardar cambios
 - Editar usuario
+    - Verificar campos vacíos
+    - Guardar cambios
 - Eliminar usuario
-
 
 ## Tests al modulo de recursos
 
 ### Tests de Sub modulo de *Servicios*
 - Crear servicio
     - Verificar campos
+    - Guardar cambios
 - Editar servicio
     - Verificar campos
+    - Guardar cambios
 - Eliminar servicio 
 
 ### Tests al Sub modulo de *Vehículos*
 - Crear vehículos
     - Verificar campos
+    - Guardar cambios
 - Editar vehículos
     - Verificar campos
+    - Guardar cambios
 - Eliminar vehículos 
 
 ### Tests al Sub modulo de *Hospitales*
 - Crear hospitales
     - Verificar campos
+    - Guardar cambios
 - Editar hospitales
     - Verificar campos
+    - Guardar cambios
 - Eliminar hospitales 
