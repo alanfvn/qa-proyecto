@@ -6,10 +6,25 @@
     - Colocar password
     - Clicker botón de inicio de sesión.
 
-- Credenciales incorectos -> dondde los campos no son validos en el registrop del usuario
-- Credenciales corectas -> donde las campos si son validos en el registro del usuaio
-- Completo y vacio -> donde las casillas no encuentra ningun texto o caracter
-- Prueba de minusculas y mayusculas ->  donde se compruba si los usuarios es creado en minuscula y se coloca en mayuscula
+- Credenciales incorrectos
+    - Colocar usuario no registrado
+    - Colocar password
+    - Clicker botón de inicio de sesión.
+
+- Credenciales correctas
+    - Colocar usuario registrado 
+    - Colocar password
+    - Clicker botón de inicio de sesión.
+
+- Completo y vació
+    - no colocar nada en el usuario
+    - no colocar nada en el passwor
+    - Clicker botón de inicio de sesión.
+
+- Prueba de minusculas y mayusculas 
+    - Colocar usuario opuesto al creado
+    - Colocar password
+    - Clicker botón de inicio de sesión.
 
 ## prueba de acceso a modulos
 
