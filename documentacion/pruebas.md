@@ -46,33 +46,23 @@
 
 ## Tests al modulo de personal
 - Agregar usuario
-    - Verificar campos vacíos
-    - Guardar cambios
+- Agregar usuario repetido
 - Editar usuario
-    - Guardar cambios
 - Eliminar usuario
 
 ## Tests al modulo de recursos
 
 ### Tests de Sub modulo de *Servicios*
 - Crear servicio
-    - Verificar campos
-    - Guardar cambios
 - Editar servicio
-    - Guardar cambios
 - Eliminar servicio 
 
 ### Tests al Sub modulo de *Vehículos*
 - Crear vehículos
-    - Verificar campos vacios
-    - Guardar cambios
 - Editar vehículos
-    - Guardar cambios
 - Eliminar vehículos 
 
 ### Tests al Sub modulo de *Hospitales*
 - Crear hospitales
-    - Guardar cambios
 - Editar hospitales
-    - Guardar cambios
 - Eliminar hospitales 
