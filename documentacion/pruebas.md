@@ -20,6 +20,7 @@
     - Hacer click en "cerra sesión"
 
 ## Tests de navegación
+
 - Verificación de navegación
     - Ingreso al módulo de reporte
     - Ingreso al módulo de informes
@@ -36,12 +37,10 @@
     - Verificar campos vacíos
     - Guardar cambios
 - Editar reporte
-    - Verificar campos vacíos
     - Guardar cambios
 - Generar PDF de un reporte
 - Filtrado de reporte
 - Eliminar un reporte
-
 
 ## Tests al modulo de informes
 - Imprimir informe vació
@@ -51,14 +50,12 @@
     - Mes actual 
     - Rango de fecha erróneo
 - Búsqueda por tabla
-- Imprimir informe filtrado
 
 ## Tests al modulo de personal
 - Agregar usuario
     - Verificar campos vacíos
     - Guardar cambios
 - Editar usuario
-    - Verificar campos vacíos
     - Guardar cambios
 - Eliminar usuario
 
@@ -69,24 +66,20 @@
     - Verificar campos
     - Guardar cambios
 - Editar servicio
-    - Verificar campos
     - Guardar cambios
 - Eliminar servicio 
 
 ### Tests al Sub modulo de *Vehículos*
 - Crear vehículos
-    - Verificar campos
+    - Verificar campos vacios
     - Guardar cambios
 - Editar vehículos
-    - Verificar campos
     - Guardar cambios
 - Eliminar vehículos 
 
 ### Tests al Sub modulo de *Hospitales*
 - Crear hospitales
-    - Verificar campos
     - Guardar cambios
 - Editar hospitales
-    - Verificar campos
     - Guardar cambios
 - Eliminar hospitales 
