@@ -3,8 +3,10 @@ function getRandomInt(min, max) {
 }
 
 
-function getFormattedDateTime() {
-  const date = new Date();
+function getFormattedDateTime(date) {
+  if(!date){
+    date = new Date()
+  }
 
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -15,8 +17,10 @@ function getFormattedDateTime() {
   return `${year}-${month}-${day}T${hours}:${minutes}`;
 }
 
-function getFormattedDate() {
-  const date = new Date();
+function getFormattedDate(date) {
+  if(!date){
+    date = new Date();
+  }
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
   const day = String(date.getDate()).padStart(2, '0');
