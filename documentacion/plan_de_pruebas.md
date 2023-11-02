@@ -27,7 +27,7 @@ GUATEMALA, 03 de noviembre de 2023
 # Alcance de las pruebas
 El alcance de las pruebas para el sistema de registro y generación de informes diseñado para los Bomberos voluntarios de Cobán, Alta Verapaz, abarcará la verificación de todas las funcionalidades críticas del sistema, incluyendo la captura precisa de datos de emergencias, la gestión eficiente de cada módulo que coforma, el registro y la  generación de informes detallados. Se llevarán a cabo pruebas de usabilidad para garantizar una interfaz intuitiva y fácil de usar. Se evaluará la seguridad del sistema para proteger la confidencialidad y la integridad de los datos sensibles. Las pruebas se centrarán en garantizar que el sistema sea confiable y eficiente.
 
-# Objetivos de prueba [pediente]
+# Objetivos de prueba
 1) Verificar la funcionalidad de inicio de sesión y autenticación del sistema.
 2) Evaluar la capacidad del sistema para capturar y gestionar datos de emergencias de manera precisa.
 3) Probar la generación de informes detallados a partir de los datos registrados.
@@ -288,17 +288,19 @@ Las premisas relacionadas con las tareas de pruebas de software, incluyendo limi
 | 4   | Riesgo de problemas de seguridad no detectados            | Realizar pruebas de seguridad especificas y detalladas, tambien, Colaborar con expertos en seguridad si es necesario para identificar y mitigar posibles riesgos. |
 | 5   | Riesgo de cambios de alcance no comtemplados              | Establecer un proceso de gestión de cambios y asegurarse de que cualquier cambio en el alcance se evalúe en términos de impacto en las pruebas y se ajuste el plan. |
 
+# Hallazgos
+Para este testing realizada al sistema de registro y generación de informes ha logrado superar todas las pruebas planificadas , lo cual significa que no se han identificado problemas, errores en el sistema durante el proceso de pruebas. En este caso, no se generan hallazgos porque no se han encontrado errores que requieran una accion de correción.
 
+Estas pruebas realizadas demuestran que el software ha demostrado ser funcional y confiable de acuerdo a los criterios de prueba establecidos en el plan de pruebas, es importante considerar esto ya que nos permite  o siguiere que el software está listo para producción. Es importante seguir monitoreando el software en su entorno de producción y estar preparado para abordar cualquier problema que pueda surgir una vez que los usuarios comiencen a utilizarlo en situaciones reales. 
 
-
-# Hallazgos[pendiente]
-
-
-# Recomendaciones[pendiente]
-
+# Recomendaciones
+1) Continuar monitoreando el sistema en su entorno de producción y estar preparado para abordar cualquier problema que pueda surgir una vez que los usuarios comiencen a utilizarlo en situaciones reales.
+2) Se recomienda hacer uso de la herramienta zypress para automatización de pruebas, para aplicaciones en ecosistema web.
+3) Se recomienda implementar pruebas para asegurarse de que las nuevas modificaciones futuras que se integren al sistema no hayan introducido errores en funcionalidades previamente probadas.\
+4) Se recomienda documentar los resultados de las pruebas y las observaciones relevantes. Esto proporcionará un registro histórico para futuras referencias y mejoras en el sistema.
 
 # Glosario
-1) Cypress: 
+1) Cypress:
 Una herramienta de automatización de pruebas de extremo a extremo para aplicaciones web.
 2) Herramienta de registro de errores: 
 La herramienta utilizada para registrar y gestionar los errores detectados durante las pruebas, como JIRA, Bugzilla o Trello.
@@ -313,7 +315,7 @@ Una matriz que define roles y responsabilidades en un proyecto, especificando qu
 
 
 # Referencias [pendiente] Aqui va la parte de excel de plan de pruebas y otros si existiera
-Lista de todos los documentos que pueden citarse como apoyo o para ampliar el contenido del plan de pruebas. Algunos ejemplos de lo que se puede hacer referencia aquí son: 
+Lista de todos los documentos que pueden citarse como apoyo o para ampliar el contenido del plan de pruebas.
 
 
 
