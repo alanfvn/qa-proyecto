@@ -60,6 +60,7 @@ pipeline {
     stage('Instalar dependencias de las pruebas'){
       steps{
         dir('pruebas'){
+          sh 'npm prune'
           sh 'npm i'
         }
       }
