@@ -58,9 +58,9 @@
 - Eliminar servicio 
 
 ### Tests al Sub modulo de *Vehículos*
-- Crear vehículos
-- Editar vehículos
-- Eliminar vehículos 
+- Crear vehículo
+- Editar vehículo
+- Eliminar vehículo
 
 ### Tests al Sub modulo de *Hospitales*
 - Crear hospitales
