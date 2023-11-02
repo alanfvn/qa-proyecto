@@ -10,7 +10,9 @@ pipeline {
   stages {
 
     stage('Clonar repositorio con codigo'){
-      git "https://github.com/alanfvn/seminario"
+      steps{
+        git "https://github.com/alanfvn/seminario"
+      }
     }
 
     stage('Limpiar datos de Docker'){
