@@ -68,7 +68,7 @@ pipeline {
     stage('Ejecutar pruebas'){
       steps{
         dir('pruebas'){
-          sh 'npx cypress run'
+          sh 'NO_COLOR=1 npx cypress run'
         }
       }
     }
