@@ -58,14 +58,18 @@ pipeline {
     }
 
     stage('Instalar dependencias de las pruebas'){
-      dir('pruebas'){
-        sh 'npm i'
+      steps{
+        dir('pruebas'){
+          sh 'npm i'
+        }
       }
     }
 
     stage('Ejecutar pruebas'){
-      dir('pruebas'){
-        sh 'npm run cypress'
+      steps{
+        dir('pruebas'){
+          sh 'npm run cypress'
+        }
       }
     }
 
