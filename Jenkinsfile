@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "Node20"}
 
   environment {
-    // CHROME_BIN = '/bin/google-chrome'
+    NOMBRE = "ALAN"
   }
 
   stages {
@@ -32,7 +32,7 @@ pipeline {
   post {
       always {
         // sh 'docker compose down --remove-orphans -v'
-        // sh 'docker compose ps'
+        sh 'docker compose ps'
       }
     }
 
