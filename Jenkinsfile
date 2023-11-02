@@ -73,6 +73,15 @@ pipeline {
       }
     }
 
+    stage('Crear reporte'){
+      steps{
+        dir('pruebas'){
+          npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+          npx marge mochawesome.json
+        }
+      }
+    }
+
   }
 
   post {
@@ -80,6 +89,22 @@ pipeline {
       dir('seminario'){
         sh 'docker compose down --remove-orphans -v'
         sh 'docker compose ps'
+      }
+
+      dir('pruebas'){
+        script{
+          def htmlContent = readFile 'mochawesome-report/mochawesome.html'
+            emailext subject: '$DEFAULT_SUBJECT',
+                     body: htmlContent,
+                     recipientProviders: [
+                       [$class: 'CulpritsRecipientProvider'],
+                       [$class: 'DevelopersRecipientProvider'],
+                       [$class: 'RequesterRecipientProvider']
+                     ], 
+                     replyTo: '$DEFAULT_REPLYTO',
+                     to: '$DEFAULT_RECIPIENTS',
+                     mimeType: 'text/html'
+        }
       }
     }
   }
