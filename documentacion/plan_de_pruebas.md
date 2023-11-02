@@ -106,84 +106,144 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
     - Verificar campos
     - Guardar cambios
 - Eliminar hospitales
-
-
 ## Funcionalidades a no probar
-
 # Criterios de aceptacion
 # Criterios de rechazo
-
 
 # Entregables
 Establece que se entregará como parte de la ejecución del plan, por ejemplo: Documento de Plan de Pruebas, Casos de Pruebas, Especificación de Diseño de Casos, Logs de errores, Reportes de incidencias, evidencias de pruebas, reportes emitidos por herramientas de pruebas y cualquier otro que se establezca.
 
-
 # Recursos
 ## Requerimientos de Entornos – Hardware 
 ### Servidores de Aplicación
-Procesador: Mínimo de 4 núcleos, preferiblemente 8 núcleos o más.
-Memoria RAM: Mínimo 8 GB, se recomiendan 16 GB o más.
-Almacenamiento: Mínimo 100 GB de espacio en disco duro.
-Sistema Operativo: Linux o Windows Server, dependiendo de las preferencias del sistema y software.
+- Procesador: Mínimo de 4 núcleos, preferiblemente 8 núcleos o más.
+- Memoria RAM: Mínimo 8 GB, se recomiendan 16 GB o más.
+- Almacenamiento: Mínimo 100 GB de espacio en disco duro.
+- Sistema Operativo: Linux o Windows, dependiendo de las preferencias del sistema y software.
 ### Bases de Datos
-Procesador: Dependerá de la carga de trabajo, pero se recomiendan múltiples núcleos.
-Memoria RAM: Mínimo 8 GB, se recomiendan 16 GB o más.
-Almacenamiento: Capacidad suficiente para la base de datos y las copias de seguridad.
+- Procesador: Dependerá de la carga de trabajo, pero se recomiendan múltiples núcleos.
+- Memoria RAM: Mínimo 8 GB, se recomiendan 16 GB o más.
+- Almacenamiento: Capacidad suficiente para la base de datos y las copias de seguridad.
 ### Equipos de PC para Testers
-Procesador: Dual-core o superior.
-Memoria RAM: Mínimo 4 GB, se recomiendan 8 GB o más.
-Almacenamiento: Al menos 250 GB de espacio en disco duro.
-Sistema Operativo: Windows 10 o una distribución de Linux compatible con las herramientas de pruebas.
+- Procesador: Dual-core o superior.
+- Memoria RAM: Mínimo 4 GB, se recomiendan 8 GB o más.
+- Almacenamiento: Al menos 250 GB de espacio en disco duro.
+- Sistema Operativo: Windows 10 o una distribución de Linux compatible con las herramientas de pruebas.
 ### Conectividad a la Red
-Conexión a Internet: Banda ancha con una velocidad razonable para la descarga de actualizaciones y acceso a recursos en línea.
-Red Local: Red Ethernet cableada con capacidad de al menos 1 Gbps para pruebas internas.
+- Conexión a Internet: Banda ancha con una velocidad razonable para la descarga de actualizaciones y acceso a recursos en línea.
 ### Accesos
-Cuentas de usuario con permisos adecuados para realizar pruebas.
-Requisitos de hardware y sistema operativo específicos según las plataformas móviles (por ejemplo, Android o iOS).
+- Cuentas de usuario con permisos adecuados para realizar pruebas.
+- Requisitos de hardware y sistema operativo específicos según las plataformas móviles (por ejemplo, Android o iOS).
 ### Equipamiento de prueba adicional:
-Las características mínimas variarán según el equipo o software específico utilizado para las pruebas de integración, carga o rendimiento. Verifica las especificaciones del equipo o software en cuestión.
-
+- Las características mínimas variarán según el equipo o software específico utilizado para las pruebas de integración, carga o rendimiento.
 
 ## Requerimientos de Entornos – Software 
-### Sistema de registro y generación de informes
-El software de registro y generación de informes que se va a probar.
-### Sistema de gestión de bases de datos
-El sistema de gestión de bases de datos (DBMS) compatible con el software de la aplicación.
-Configuración adecuada de la base de datos, incluyendo la creación de esquemas y tablas requeridos.
-### Sistemas Operativos
-Sistemas operativos compatibles con el software de registro y generación de informes, tanto en servidores como en equipos de prueba.
-Las versiones específicas del sistema operativo que el software admite.
-### Navegadores Web (si es aplicable)
-Navegadores web compatibles para la interfaz de usuario del sistema.
-Asegurarse de que los navegadores estén actualizados a las últimas versiones.
-### Herramientas de Desarrollo (si es necesario):
-Herramientas de desarrollo como IDE (Entorno de Desarrollo Integrado), compiladores, depuradores, etc., si se realizan modificaciones o personalizaciones en el software.
-### Software de pruebas y automatización
-Herramientas de pruebas, como suites de pruebas, frameworks de automatización, software de gestión de pruebas, entre otros, utilizados para llevar a cabo las pruebas.
-### Herramientas de Documentación:
-Software de procesamiento de texto o herramientas de documentación para registrar resultados de pruebas, incidentes y documentación de pruebas.
+### Software de pruebas
+- Software de Pruebas: Cypress
+- Versión de Cypress: [Especificar la versión de Cypress que se utilizará, por ejemplo, "Cypress 6.7.0"]
+- Para instalar Cypress y configurarlo, sigue la documentación oficial de Cypress: [Proporcionar el enlace a la documentación oficial de Cypress]
+### Navegadores web compatibles
+- Navegadores Web Compatibles: Google Chrome, Mozilla Firefox, Microsoft Edge
+- Se recomienda utilizar la última versión de cada navegador compatible con Cypress.
+### Sistema operativo
+- Sistema Operativo: Windows 10, macOS, Linux
+- Asegurarse de que el sistema operativo esté actualizado y sea compatible con Cypress.
+### Requisitos de servidores
+- No se requieren servidores específicos para Cypress. La ejecución de pruebas en Cypress se realiza localmente en el entorno de desarrollo.
+#### Base de datos
+- Sistema de Gestión de Bases de Datos (DBMS): SQLite
+- Versión de SQLite: [Especificar la versión de SQLite utilizada, por ejemplo, "SQLite 3.36.0"]
+- SQLite es una base de datos de archivo que se utiliza comúnmente en aplicaciones web de Django. Asegurarse de que SQLite esté configurado y funcione correctamente con Django
+### Herramientas de registro de rrrores
+- Herramienta de Registro de Errores: [Especificar la herramienta que se utilizará para registrar errores, por ejemplo, "JIRA", "Bugzilla", "Trello", etc.]
+- Proporcionar detalles sobre cómo acceder y utilizar esta herramienta para gestionar errores específicos de Cypress.
+### Otro Software Relevante
+- Lenguaje de Programación: Python
+- Framework de Desarrollo Web: Django
+- Python y Django se utilizan para el desarrollo del sistema y la configuración de la base de datos. Asegurase de que Python y Django estén correctamente configurados en el entorno de desarrollo.
 
+## Herramientas de Pruebas Requeridas
+Las siguientes herramientas y recursos serán necesarios para llevar a cabo las pruebas del sistema:
 
-
-
-
-
-
-## Herramientas de Pruebas Requeridas 
-Especifica las herramientas de software, metodologías o técnicas especiales empleadas en las pruebas, por ejemplo Herramientas de Automatización de Pruebas, Software de Gestión de Pruebas, entre otros. 
+- Herramienta de pruebas: Cypress
+- Versión de Cypress: [Especificar la versión de Cypress que se utilizará, por ejemplo, "Cypress 6.7.0"]
+- Navegadores web compatibles: Google Chrome, Mozilla Firefox, Microsoft Edge
+    - Se recomienda utilizar la última versión de cada navegador compatible con Cypress.
+- Sistema operativo: Windows 10/11, macOS, Linux
+    - Asegurarse de que el sistema operativo esté actualizado y sea compatible con Cypress.
+- Sistema de gestión de bases de datos (DBMS): SQLite
+- Versión de SQLite: [Especificar la versión de SQLite utilizada, por ejemplo, "SQLite 3.36.0"]
+- Herramienta de registro de errores: [Especificar la herramienta que se utilizará para registrar errores, por ejemplo, "JIRA", "Bugzilla", "Trello", etc.]
 ## Personal
-Lista del personal necesario para completar las actividades de pruebas, especificando sus roles, por ejemplo: Un (1) Líder de Pruebas, Cinco (5) Analista de Pruebas (Testers), Dos (2) especialistas en automatización de pruebas, entre otros. 
-## Entrenamiento
-Necesidades de entrenamiento en el Sistema o Aplicación, así como en las herramientas de prueba a utilizar.
+El equipo necesario para llevar a cabo las actividades de pruebas incluye:
+- Un (1) Líder de pruebas (Alan David)
+- Tres (3) Analistas de pruebas (Testers)(Alan David, Manuel Miguel, Jose Raul)
+- Un (1) Especialistas en automatización de pruebas (Alan David)
 
 # Planificación y Organización
-## Procedimientos para las Pruebas
-Especifica los procedimientos o metodología de pruebas a emplear durante la ejecución del plan de pruebas de software.
+Los procedimientos y la metodología de pruebas que se emplearán durante la ejecución del plan de pruebas de software se detallan a continuación:
+### Revisión del documento de plan de pruebas
+- El Líder de pruebas, en conjunto con los analistas de pruebas, revisará el documento de plan de pruebas para comprender los objetivos, alcance y requisitos del sistema a probar.
+### Configuración del entorno de pruebas:
+- Se asegurará de que los entornos de hardware y software necesarios estén debidamente configurados, incluyendo servidores de aplicación, bases de datos y equipos de prueba.
+### Preparación de datos de prueba:
+- Se generarán datos de prueba realistas que se utilizarán durante las pruebas. Esto incluirá datos de emergencias, usuarios, vehículos, hospitales y otros elementos necesarios.
+### Diseño de casos de pruebas:
+- El equipo de analistas de pruebas diseñará casos de prueba para cubrir todas las funcionalidades a probar. Los casos de prueba se basarán en los requisitos del sistema.
+### Ejecución de pruebas manuales:
+- Los analistas de pruebas ejecutarán manualmente los casos de prueba diseñados, registrando los resultados y cualquier problema que se detecte al momento de realizar las pruebas. 
+- Se probarán todas las funcionalidades, incluyendo autenticación, navegación, módulos de reportes, informes, personal y recursos.
+### Automatización de pruebas:
+- El especialista en automatización de pruebas desarrollará scripts de pruebas automatizadas utilizando la herramienta Cypress. Estos scripts se centrarán en las áreas que integran el sistema y se ejecutarán de manera continua para identificar posibles problemas.
+### Registro de errores:
+- Cualquier error detectada durante las pruebas manuales o automatizadas se registrará en la herramienta de registro de errores especificada en los Requerimientos de Entornos – Software, por ultimo se proporcionará información detallada sobre cada error y su gravedad.
+### Evaluación de seguridad:
+- Se evaluará la seguridad del sistema para garantizar la protección de la confidencialidad y la integridad de los datos sensibles.
+### Informe de resultados de pruebas:
+- El líder de pruebas preparará un informe detallado de los resultados de las pruebas, que incluirá resúmenes de los casos de prueba, errores encontrados, estadísticas de ejecución y cualquier observación importante.
+### Revisión y aprobación de pruebas:
+- El informe de resultados de pruebas se revisará con el equipo de desarrollo y se obtendrá la aprobación para proceder con las correcciones y mejoras necesarias.
+### Retesting:
+- Después de que se realicen las correcciones y mejoras, se llevarán a cabo pruebas de retesting para asegurarse de que los errores se han solucionado de manera satisfactoria.
+### Cierre de pruebas:
+- Una vez que todas las pruebas hayan sido completadas y los errores se hayan corregido, se procederá al cierre de las pruebas y se considerará el sistema listo para su implementación.
+
 ## Matriz de Responsabilidades
-Lista cada una de las personas integrantes del equipo de QA y sus responsabilidades. Se puede hacer uso de una Matriz RACI (Responsable, Aprobador, Consultado, Informado). 
+Se puede hacer uso de una Matriz RACI (Responsable, Aprobador, Consultado, Informado). 
+
+| Nombre                 | Responsable (R) | Aprobador (A) | Consultado (C) | Informado (I) |
+|------------------------|-----------------|----------------|-----------------|---------------|
+| Alan David Gonzales    | R               | A              | C               | I             |
+| Manuel Miguel Miguel  | C               | I              | R               | A             |
+| Jose Raul              | C               | I              | R               | A             |
+| Otros Analistas        | C               | I              | R               | A             |
+
 
 # Premisas
-Las premisas relacionadas con las tareas de pruebas de software, incluyendo limitaciones de tiempo, disponibilidad de recursos que se asumen, uso de una metodología de pruebas, uso de una herramienta, entre otros.
+Las premisas relacionadas con las tareas de pruebas de software, incluyendo limitaciones de tiempo, disponibilidad de recursos que se asumen, uso de una metodología de pruebas, uso de una herramienta, entre otros, son las siguientes:
+
+### Disponibilidad de recursos:
+- Se asume que los recursos humanos necesarios, incluyendo el equipo de pruebas y el personal de desarrollo, estarán disponibles según lo programado en el plan.
+### Acceso a entornos de pruebas:
+- Se espera que los entornos de prueba, incluyendo servidores de aplicación, bases de datos y equipos de prueba, estén disponibles y debidamente configurados para realizar las pruebas de acuerdo a lo especificado.
+### Datos de prueba:
+- Se asume que se contarán con datos de prueba realistas y representativos para llevar a cabo las pruebas de software. Estos datos deberán estar disponibles en el momento programado.
+### Metodología de pruebas
+- Se seguirá la metodología de pruebas establecida en este plan, que incluye la revisión del documento de plan de pruebas, la configuración del entorno de pruebas, la preparación de datos de prueba, el diseño de casos de prueba, la ejecución de pruebas manuales y automatizadas, la evaluación de seguridad, la revisión de resultados.
+### Herramienta de pruebas:
+- Se utilizará la herramienta de pruebas Cypress, en la versión especificada, para la automatización de pruebas. La herramienta de registro de errores especificada en los Requerimientos de Entornos – Software se utilizará para gestionar los errores detectados durante las pruebas.
+### Navegadores web compatibles:
+- Se trabajará con los navegadores web compatibles mencionados en los Requerimientos de Entornos – Software, y se espera que estos navegadores estén debidamente configurados y actualizados.
+### Sistema operativo:
+- El sistema operativo en los equipos de prueba y desarrollo deberá ser compatible con Cypress y las herramientas utilizadas en el proceso de pruebas.
+### Base de datos:
+- Se utilizará el sistema de gestión de bases de datos SQLite en la versión especificada, y se asume que estará configurado correctamente para el funcionamiento del sistema.
+### Lenguaje de programación y framework:
+- Se utilizará Python como lenguaje de programación y Django como framework de desarrollo web, y se espera que estén correctamente configurados en el entorno de desarrollo.
+### Acceso a la herramienta de registro de errores:
+- Los miembros del equipo de pruebas tendrán acceso a la herramienta de registro de errores especificada y estarán capacitados para registrar y gestionar los errores de manera adecuada.
+
+
 
 # Dependencias y Riesgos
 Aquí se listan los riesgos asociados con el proceso de pruebas de software, por ejemplo, algunas fuentes de riesgos suelen ser:
@@ -193,7 +253,30 @@ Aquí se listan los riesgos asociados con el proceso de pruebas de software, por
 •	Restricciones de tiempo.
 •	Premisas que resulten no ser ciertas. 
 Los riesgos se pueden clasificar en función de su probabilidad e impacto, cada uno debe contemplar un plan de mitigación para evitar que ocurra o plan de contingencia cuando el riesgo no puede mitigarse y tiene que aceptarse.
-# Referencias 
+
+
+
+
+# Dependencias y Riesgos
+
+| #   | Dependencias                                             | Plan de Mitigación                                           |
+| --- | -------------------------------------------------------- | ------------------------------------------------------------ |
+| 1   | Dependencia con desarrollos                               | Mantener una comunicación constante con el equipo de desarrollo para asegurarse de que se cumplan los plazos. Si se detectan retrasos, ajustar el cronograma de pruebas. |
+| 2   | Dependencia con otros proyectos                          | Coordinar con los equipos externos para garantizar la disponibilidad y calidad de los componentes dependientes. |
+| 3   | Disponibilidad de recursos                                | Garantizar que los recursos necesarios estén disponibles según lo programado. Reservar entornos de pruebas con anticipación y contar con un plan de contingencia en caso de escasez de recursos. |
+| 4   | Restricciones de tiempo                                   | Definir un cronograma de pruebas realista y priorizar las actividades de acuerdo con el nivel de complejidad de las funcionalidades. |
+| 5   | Premisas que resulten no ser ciertas                      | Verificar y confirmar la validez de las premisas antes de iniciar las pruebas. Si alguna premisa resulta no ser cierta, adaptar el plan. |
+
+
+| #   | Riesgos                                                  | Plan de Contingencia                                          |
+| --- | -------------------------------------------------------- | ------------------------------------------------------------ |
+| 1   | Riesgo de incumplimiento del cronograma                   | Establecer un plan de contingencia que incluya la posibilidad de ajustar los tiempos establecidos, darle prioridad a las pruebas mas relevantes y volver a asignar recursos si es necesario. |
+| 2   | Riesgo de fallos que afectan en producción                   | Implementar pruebas especificas y revisar cuidadosamente los resultados de las pruebas. Posterior a es establecer un proceso de revisión y aprobación antes de la implementación. |
+| 3   | Riesgo de datos de prueba no suficientes                   | Evaluar y ajustar los datos de prueba para que sean más realistas. Si es necesario, crear pruebas adicionales que cubran casos específicos. |
+| 4   | Riesgo de problemas de seguridad no detectados            | Realizar pruebas de seguridad especificas y detalladas, tambien, Colaborar con expertos en seguridad si es necesario para identificar y mitigar posibles riesgos. |
+| 5   | Riesgo de cambios de alcance no comtemplados              | Establecer un proceso de gestión de cambios y asegurarse de que cualquier cambio en el alcance se evalúe en términos de impacto en las pruebas y se ajuste el plan. |
+
+# Referencias [pendiente] Aqui va la parte de excel de plan de pruebas y otros si existiera
 Lista de todos los documentos que pueden citarse como apoyo o para ampliar el contenido del plan de pruebas. Algunos ejemplos de lo que se puede hacer referencia aquí son: 
 •	Plan de Proyecto.
 •	Especificaciones de Requerimientos. 
@@ -202,11 +285,9 @@ Lista de todos los documentos que pueden citarse como apoyo o para ampliar el co
 •	Procedimientos y estándares de Desarrollo. 
 •	Procedimientos y estándares de Pruebas. 
 •	Metodologías, Procedimientos y estándares corporativos.
+
 # Glosario
 Definiciones de términos usados en la documentación, y general sobre el área de pruebas.
-
-
-
 
 
 
