@@ -102,7 +102,8 @@ pipeline {
 
       dir('pruebas'){
         script{
-          def htmlContent = readFile 'mochawesome-report/mochawesome.html'
+          def htmlContent = readFile './mochawesome-report/mochawesome.html'
+          echo "HTML Content: ${htmlContent}"
             emailext subject: '$DEFAULT_SUBJECT',
                      body: htmlContent,
                      recipientProviders: [
