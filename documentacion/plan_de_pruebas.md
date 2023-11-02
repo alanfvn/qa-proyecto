@@ -18,99 +18,112 @@
 # Alcance de las pruebas
 El alcance de las pruebas para el sistema de registro y generación de informes diseñado para los Bomberos voluntarios de Cobán, Alta Verapaz, abarcará la verificación de todas las funcionalidades críticas del sistema, incluyendo la captura precisa de datos de emergencias, la gestión eficiente de cada módulo que coforma, el registro y la  generación de informes detallados. Se llevarán a cabo pruebas de usabilidad para garantizar una interfaz intuitiva y fácil de usar. Se evaluará la seguridad del sistema para proteger la confidencialidad y la integridad de los datos sensibles. Las pruebas se centrarán en garantizar que el sistema sea confiable y eficiente.
 
-- [pendiente] Aqui va la parte que le correspode documentar a Raul
-## Funcionalidades a probar
+- [pendiente_agregar_capturas] 
+# Funcionalidades a probar
+## Cypress ejecutandose
+![](https://i.imgur.com/qHLLJOk.png)
 
-### Tests de autenticación
-- Verificar inicio de sesión con credenciales VACÍAS
+## Lista de test a realizar
+![](https://i.imgur.com/FmbUSvc.png)
+
+# Set de pruebas
+## Tests de autenticación
+1) Verificar inicio de sesión con *credenciales VACÍAS*
     - No colocar nada en el campo de usuario.
     - No colocar nada en el campo de password.
-    - Hacer click al botón de inicio de sesión.
+![](https://i.imgur.com/FOW0Skw.png)
 
-- Verificar inicio de sesión (usuario con mayúsculas)
+2) Verificar inicio de sesión (usuario con mayúsculas)
     - Colocar usuario con mayúsculas.
     - Colocar password.
-    - Hacer click al botón de inicio de sesión.
+![](https://i.imgur.com/NTvOcVL.png)
 
-- Verificar inicio de sesión con credenciales CORRECTAS
+3) Verificar inicio de sesión con *credenciales CORRECTAS*
     - Colocar usuario
     - Colocar password
-    - Hacer click al botón de inicio de sesión.
+![](https://i.imgur.com/ezHhjZP.png)
 
-- Verificación de cerrar sesión
+4) Verificación de cerrar sesión
     - Hacer click en "cerra sesión"
+![](https://i.imgur.com/iuX2YVU.png)
 
-### Tests de navegación
-- Verificación de navegación
-    - Ingreso al módulo de reporte
-    - Ingreso al módulo de informes
-    - Ingreso al módulo de personal
-    - Ingreso al modulo de recurso
-        - Acceso a sub modulo de personal
-        - Acceso a sub modulo de vehículos
-        - Acceso a Sub modulo de hospitales
+## Tests al módulo de reportes
+1) Dirigirse a inicio
+![](https://i.imgur.com/dqNQugh.png)
+2) Crear reporte
+![](https://i.imgur.com/nef54CY.png)
+3) Verificar campos vacíos
+![](https://i.imgur.com/JYMOeti.png)
+4) Editar reporte
+![](https://i.imgur.com/zdytZ80.png)
+5) Generar PDF
+![](https://i.imgur.com/OJPiKXq.png)
+6) Filtrado de un reporte
+![](https://i.imgur.com/bgBfka6.png)
+7) Eliminar un reporte
+![](https://i.imgur.com/u131NDp.png)
 
-### Tests al modulo de reportes
-#### Funcionalidad
-- Crear reporte
-    - Verificar campos vacíos
-    - Guardar cambios
-- Editar reporte
-    - Verificar campos vacíos
-    - Guardar cambios
-- Generar PDF de un reporte
-- Filtrado de reporte
-- Eliminar un reporte
+## Tests al módulo de informes
+1) Filtrar por todos los tipos de servicios
+![](https://i.imgur.com/jPeUUYL.png)
+2) Filtrar por servicio específico
+![](https://i.imgur.com/vyFO292.png)
+3) Filtrar, rango de fecha erróneo
+![](https://i.imgur.com/ys2k6vN.png)
+4) Búsqueda por tabla
+![](https://i.imgur.com/dAozxVp.png)
 
-### Tests al modulo de informes
-- Imprimir informe vació
-- Filtrar por todos los tipos de servicios
-- Filtrar por servició especifico
-- Filtrar por fecha
-    - Mes actual
-    - Rango de fecha erróneo
-- Búsqueda por tabla
-- Imprimir informe filtrado
+## Tests al modulo de personal
+1) Agregar usuario
+![](https://i.imgur.com/sRmMv5j.png)
+2) Agregar usuario repetido
+![](https://i.imgur.com/SR4EFcC.png)
+3) Editar usuario
+![](https://i.imgur.com/lefeYgU.png)
+4) Eliminar usuario
+![](https://i.imgur.com/eTNhs7a.png)
 
-### Tests al modulo de personal
-- Agregar usuario
-    - Verificar campos vacíos
-    - Guardar cambios
-- Editar usuario
-    - Verificar campos vacíos
-    - Guardar cambios
-- Eliminar usuario
+## Tests de navegación
+1) Dirigirse al inicio
+![](https://i.imgur.com/ApXUYWk.png)
+2) Dirigirse al módulo de reportes
+![](https://i.imgur.com/FIPaBNi.png)
+3) Dirigirse al módulo de informes
+![](https://i.imgur.com/zpzucsD.png)
+4) Dirigirse al módulo de personal
+![](https://i.imgur.com/4NLaXtl.png)
+5) Dirigirse al submódulo de servicios
+![](https://i.imgur.com/gQe7hNx.png)
+6) Dirigirse al submódulo de vehiculos
+![](https://i.imgur.com/XWwjLEq.png)
+7) Dirigirse al submódulo de hospitales
+![](https://i.imgur.com/zgNliQt.png)
 
-### Tests al modulo de recursos
-#### Tests de Sub modulo de Servicios
-- Crear servicio
-    - Verificar campos
-    - Guardar cambios
-- Editar servicio
-    - Verificar campos
-    - Guardar cambios
-- Eliminar servicio
-#### Tests al Sub modulo de Vehículos
-- Crear vehículos
-    - Verificar campos
-    - Guardar cambios
-- Editar vehículos
-    - Verificar campos
-    - Guardar cambios
-- Eliminar vehículos
-#### Tests al Sub modulo de Hospitales
-- Crear hospitales
-    - Verificar campos
-    - Guardar cambios
-- Editar hospitales
-    - Verificar campos
-    - Guardar cambios
-- Eliminar hospitales
-## Funcionalidades a no probar
-# Criterios de aceptacion
-# Criterios de rechazo
+## Tests al modulo de recursos
+### Tests de Submódulo de *Servicios*
+1) Crear servicio
+![](https://i.imgur.com/mmYzwK3.png)
+2) Editar servicio
+![](https://i.imgur.com/5cmWXCA.png)
+3) Eliminar servicio 
+![](https://i.imgur.com/PmFtqFS.png)
+### Tests al Subódulo de *Vehículos*
+1) Crear vehículo
+![](https://i.imgur.com/NZnwJdi.png)
+2) Editar vehículo
+![](https://i.imgur.com/C2l6nST.png)
+3) Eliminar vehículo
+![](https://i.imgur.com/B7SHYPQ.png)
 
-# Entregables
+### Tests al Submódulo de *Hospitales*
+1) Crear hospitales
+![](https://i.imgur.com/qtE7O8G.png)
+2) Editar hospitales
+![](https://i.imgur.com/Q7ZgFkT.png)
+3) Eliminar hospitales
+![](https://i.imgur.com/v1IpYrj.png)
+
+# Entregables (aun falta verificar)
 Establece que se entregará como parte de la ejecución del plan, por ejemplo: Documento de Plan de Pruebas, Casos de Pruebas, Especificación de Diseño de Casos, Logs de errores, Reportes de incidencias, evidencias de pruebas, reportes emitidos por herramientas de pruebas y cualquier otro que se establezca.
 
 # Recursos
@@ -242,20 +255,6 @@ Las premisas relacionadas con las tareas de pruebas de software, incluyendo limi
 - Se utilizará Python como lenguaje de programación y Django como framework de desarrollo web, y se espera que estén correctamente configurados en el entorno de desarrollo.
 ### Acceso a la herramienta de registro de errores:
 - Los miembros del equipo de pruebas tendrán acceso a la herramienta de registro de errores especificada y estarán capacitados para registrar y gestionar los errores de manera adecuada.
-
-
-
-# Dependencias y Riesgos
-Aquí se listan los riesgos asociados con el proceso de pruebas de software, por ejemplo, algunas fuentes de riesgos suelen ser:
-•	Dependencias con Desarrollos.
-•	Dependencias con otros proyectos.
-•	Disponibilidad de recursos.
-•	Restricciones de tiempo.
-•	Premisas que resulten no ser ciertas. 
-Los riesgos se pueden clasificar en función de su probabilidad e impacto, cada uno debe contemplar un plan de mitigación para evitar que ocurra o plan de contingencia cuando el riesgo no puede mitigarse y tiene que aceptarse.
-
-
-
 
 # Dependencias y Riesgos
 
