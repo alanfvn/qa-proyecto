@@ -70,7 +70,7 @@ pipeline {
         dir('pruebas'){
           script{
             try{
-              sh 'NO_COLOR=1 npx cypress run'
+              sh 'NO_COLOR=1 npx cypress run --reporter mochawesome --reporter-options reportDir="cypress/results",overwrite=false,html=false,json=true'
             }catch(Exception e){
               echo "Un test ha fallado!"
             }
