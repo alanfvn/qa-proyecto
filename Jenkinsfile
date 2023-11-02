@@ -92,6 +92,9 @@ pipeline {
 
   post {
     always {
+
+      cleanWs deleteDirs: true, notFailBuild: true
+
       dir('seminario'){
         sh 'docker compose down --remove-orphans -v'
         sh 'docker compose ps'
