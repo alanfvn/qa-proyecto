@@ -4,23 +4,19 @@
 - Verificar inicio de sesión con *credenciales VACÍAS*
     - No colocar nada en el campo de usuario.
     - No colocar nada en el campo de password.
-    - Hacer click al botón de inicio de sesión.
 
 - Verificar inicio de sesión (usuario con mayúsculas)
     - Colocar usuario con mayúsculas.
     - Colocar password.
-    - Hacer click al botón de inicio de sesión.
 
 - Verificar inicio de sesión con *credenciales CORRECTAS*
     - Colocar usuario
     - Colocar password
-    - Hacer click al botón de inicio de sesión.
 
 - Verificación de cerrar sesión
     - Hacer click en "cerra sesión"
 
 ## Tests de navegación
-
 - Verificación de navegación
     - Ingreso al módulo de reporte
     - Ingreso al módulo de informes
@@ -45,9 +41,7 @@
 ## Tests al modulo de informes
 - Filtrar por todos los tipos de servicios
 - Filtrar por servició especifico
-- Filtrar por fecha
-    - Mes actual 
-    - Rango de fecha erróneo
+- Filtrar, rango de fecha erróneo
 - Búsqueda por tabla
 
 ## Tests al modulo de personal
