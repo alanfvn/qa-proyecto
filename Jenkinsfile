@@ -40,7 +40,9 @@ pipeline {
     }
 
     stage('Ejecutar tests'){
-      sh 'npm run cypress'
+      steps{
+        sh 'npm run cypress'
+      }
     }
 
   }
