@@ -1,13 +1,22 @@
+## UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA FACULTAD DE INGENIERÍA EN SISTEMAS DE INFORMACIÓN
+
+**“PROYECTO FINAL (ZYPRESS)”**
+
+- ALAN DAVID GONZÁLEZ LÓPEZ (4090-19-4713)
+- MANUEL MIGUEL MIGUEL (4090-19-9063)
+- JOSÉ RAÚL BOTZOC MÉRIDA (4090-19-7994)
+
+GUATEMALA, 03 de noviembre de 2023
 
 # Historial de versiones
 | Fecha | Versión | Autor | Organización | Descripción |
 |-----------|-----------|-----------|-----------|-----------|
 | 01-10-23  | 1.0  | Manauel Miguel Miguel  | GRUPO BOTZIC  | Documento Plan de Pruebas  |
 
-# Informacion del proyecto
+# Información del proyecto
 | Campo                       | Descripción                                        |
 |----------------------------- |--------------------------------------------------- |
-| Empresa / Organización      | GRUPO MIGUEDOCU UMG        |
+| Empresa / Organización      | GRUPO BOTZIC UMG        |
 | Proyecto                    | SISTEMA BOMBEROS VOLUNTARIOS COBAN                        |
 | Fecha de preparación        | 01-10-23          |
 | Cliente                     | BOMBEROS VOLUNTARIOS COBAN                         |
@@ -18,7 +27,14 @@
 # Alcance de las pruebas
 El alcance de las pruebas para el sistema de registro y generación de informes diseñado para los Bomberos voluntarios de Cobán, Alta Verapaz, abarcará la verificación de todas las funcionalidades críticas del sistema, incluyendo la captura precisa de datos de emergencias, la gestión eficiente de cada módulo que coforma, el registro y la  generación de informes detallados. Se llevarán a cabo pruebas de usabilidad para garantizar una interfaz intuitiva y fácil de usar. Se evaluará la seguridad del sistema para proteger la confidencialidad y la integridad de los datos sensibles. Las pruebas se centrarán en garantizar que el sistema sea confiable y eficiente.
 
-- [pendiente_agregar_capturas] 
+# Objetivos de prueba [pediente]
+1) Verificar la funcionalidad de inicio de sesión y autenticación del sistema.
+2) Evaluar la capacidad del sistema para capturar y gestionar datos de emergencias de manera precisa.
+3) Probar la generación de informes detallados a partir de los datos registrados.
+4) Evaluar la usabilidad del sistema para asegurar una interfaz intuitiva y fácil de usar.
+5) Comprobar la seguridad del sistema para proteger la confidencialidad e integridad de los datos sensibles.
+6) Verificar la confiabilidad y eficiencia del sistema en general.
+
 # Funcionalidades a probar
 ## Cypress ejecutandose
 ![](https://i.imgur.com/qHLLJOk.png)
@@ -122,9 +138,6 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/Q7ZgFkT.png)
 3) Eliminar hospitales
 ![](https://i.imgur.com/v1IpYrj.png)
-
-# Entregables (aun falta verificar)
-Establece que se entregará como parte de la ejecución del plan, por ejemplo: Documento de Plan de Pruebas, Casos de Pruebas, Especificación de Diseño de Casos, Logs de errores, Reportes de incidencias, evidencias de pruebas, reportes emitidos por herramientas de pruebas y cualquier otro que se establezca.
 
 # Recursos
 ## Requerimientos de Entornos – Hardware 
@@ -275,18 +288,32 @@ Las premisas relacionadas con las tareas de pruebas de software, incluyendo limi
 | 4   | Riesgo de problemas de seguridad no detectados            | Realizar pruebas de seguridad especificas y detalladas, tambien, Colaborar con expertos en seguridad si es necesario para identificar y mitigar posibles riesgos. |
 | 5   | Riesgo de cambios de alcance no comtemplados              | Establecer un proceso de gestión de cambios y asegurarse de que cualquier cambio en el alcance se evalúe en términos de impacto en las pruebas y se ajuste el plan. |
 
-# Referencias [pendiente] Aqui va la parte de excel de plan de pruebas y otros si existiera
-Lista de todos los documentos que pueden citarse como apoyo o para ampliar el contenido del plan de pruebas. Algunos ejemplos de lo que se puede hacer referencia aquí son: 
-•	Plan de Proyecto.
-•	Especificaciones de Requerimientos. 
-•	Diseño General.
-•	Diseño Detallado. 
-•	Procedimientos y estándares de Desarrollo. 
-•	Procedimientos y estándares de Pruebas. 
-•	Metodologías, Procedimientos y estándares corporativos.
+
+
+
+# Hallazgos[pendiente]
+
+
+# Recomendaciones[pendiente]
+
 
 # Glosario
-Definiciones de términos usados en la documentación, y general sobre el área de pruebas.
+1) Cypress: 
+Una herramienta de automatización de pruebas de extremo a extremo para aplicaciones web.
+2) Herramienta de registro de errores: 
+La herramienta utilizada para registrar y gestionar los errores detectados durante las pruebas, como JIRA, Bugzilla o Trello.
+3) Entornos de pruebas: 
+Los entornos de hardware y software necesarios para llevar a cabo las pruebas, incluyendo servidores de aplicación, bases de datos y equipos de prueba.
+4) Automatización de pruebas: 
+El proceso de escribir y ejecutar scripts de pruebas automatizadas utilizando una herramienta como Cypress.
+5) Retesting: 
+Pruebas realizadas después de que se hayan corregido los errores para asegurarse de que se han solucionado satisfactoriamente.
+6) Matriz RACI: 
+Una matriz que define roles y responsabilidades en un proyecto, especificando quién es Responsable (R), Aprobador (A), Consultado (C) e Informado (I) para cada tarea.
+
+
+# Referencias [pendiente] Aqui va la parte de excel de plan de pruebas y otros si existiera
+Lista de todos los documentos que pueden citarse como apoyo o para ampliar el contenido del plan de pruebas. Algunos ejemplos de lo que se puede hacer referencia aquí son: 
 
 
 
