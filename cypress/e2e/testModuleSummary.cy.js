@@ -16,8 +16,8 @@ describe('Test modulo informes', () => {
     cy.visit('/')
     const inputUser = cy.get('#id_username')
     const inputPass = cy.get('#id_password')
-    inputUser.clear(); inputUser.type('admin');
-    inputPass.clear(); inputPass.type('admin');
+    inputUser.clear().type('admin');
+    inputPass.clear().type('admin');
     cy.get('button[type="submit"]').click()
   })
 
@@ -52,5 +52,4 @@ describe('Test modulo informes', () => {
     cy.get('.dataTables_empty').should('exist');
     cy.get('input[type="search"]').clear()
   })
-
 })

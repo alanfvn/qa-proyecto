@@ -1,5 +1,6 @@
 describe('Tests de autenticación', () => {
-  beforeEach(function () {})
+
+  beforeEach(function (){})
 
   it('Verificar campos vacios', ()=>{
     cy.clearCookies()
@@ -17,8 +18,7 @@ describe('Tests de autenticación', () => {
 
   it('Verificar inició de sesión', () => {
     const inputUser = cy.get('#id_username')
-    inputUser.clear()
-    inputUser.type('admin')
+    inputUser.clear().type('admin')
     cy.get('#id_password').type('admin')
     cy.get('button[type="submit"]').click()
   })
