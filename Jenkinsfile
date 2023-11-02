@@ -23,6 +23,10 @@ pipeline {
 
     stage('Iniciar contenedor'){
       steps{
+        sh 'echo "DEBUG=FALSE" > .env'
+        sh 'touch db.sqlite3'
+        sh 'chmod 777 db.sqlite3'
+
         sh 'docker compose up -d --wait'
         sh 'docker compose ps'
       }
