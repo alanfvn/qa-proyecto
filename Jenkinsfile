@@ -30,7 +30,7 @@ pipeline {
       steps{
         dir('seminario'){
           sh 'echo "DEBUG=FALSE" > .env'
-          sh 'rm db.sqlite3'
+          sh 'if [ -e db.sqlite3 ]; then rm db.sqlite3; fi'
           sh 'touch db.sqlite3'
           sh 'chmod 777 db.sqlite3'
           sh 'docker compose up -d --wait'
