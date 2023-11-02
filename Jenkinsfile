@@ -93,7 +93,6 @@ pipeline {
   post {
     always {
 
-      cleanWs deleteDirs: true, notFailBuild: true
 
       dir('seminario'){
         sh 'docker compose down --remove-orphans -v'
@@ -115,6 +114,8 @@ pipeline {
                      mimeType: 'text/html'
         }
       }
+
+      cleanWs deleteDirs: true, notFailBuild: true
     }
   }
 }
