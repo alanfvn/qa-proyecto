@@ -10,5 +10,6 @@ module.exports = defineConfig({
     baseUrl: 'http://localhost/',
     testIsolation: false,
     chromeWebSecurity: false,
+    experimentalRunAllSpecs: true,
   },
 });
