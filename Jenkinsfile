@@ -41,20 +41,10 @@ pipeline {
       }
     }
     
-    stage('Clonar pruebas'){
+    stage('Ejecutar pruebas'){
       steps{
         git "https://github.com/alanfvn/qa-proyecto"
-      }
-    }
-
-    stage('Dependencies') {
-      steps {
         sh 'npm i'
-      }
-    }
-
-    stage('Ejecutar tests'){
-      steps{
         sh 'npm run cypress'
       }
     }
