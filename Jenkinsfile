@@ -76,8 +76,8 @@ pipeline {
     stage('Crear reporte'){
       steps{
         dir('pruebas'){
-          npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
-          npx marge mochawesome.json
+          sh 'npx mochawesome-merge "cypress/results/*.json" > mochawesome.json'
+          sh 'npx marge mochawesome.json'
         }
       }
     }
