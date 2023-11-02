@@ -3,14 +3,12 @@ describe('Tests de navegación', () => {
 
   it('Dirigirse al inicio', ()=>{
     cy.clearCookies()
-    cy.visit('http://192.168.0.26')
+    cy.visit('/')
 
     const inputUser = cy.get('#id_username')
     const inputPass = cy.get('#id_password')
-    inputUser.clear()
-    inputUser.type('admin')
-    inputPass.clear()
-    inputPass.type('admin')
+    inputUser.clear(); inputUser.type('admin')
+    inputPass.clear(); inputPass.type('admin')
     cy.get('button[type="submit"]').click()
   })
 
@@ -32,7 +30,7 @@ describe('Tests de navegación', () => {
   it('Dirigirse al submodulo de servicios', ()=>{
     cy.get('.nav-link.dropdown-toggle').click();
     cy.get('a[href="/recursos/servicios/"]').click()
-    cy.contains('h1', 'servicios').should('exist');
+    cy.contains('h1', 'Servicios').should('exist');
   })
 
   it('Dirigirse al submodulo de vehiculos', ()=>{

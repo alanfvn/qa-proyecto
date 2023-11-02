@@ -7,6 +7,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       on('task', {downloadFile})
     },
+    baseUrl: 'http://localhost/',
     testIsolation: false,
     chromeWebSecurity: false,
   },

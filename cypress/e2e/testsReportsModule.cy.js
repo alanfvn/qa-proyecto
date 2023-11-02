@@ -1,11 +1,11 @@
 import {getRandomInt, getFormattedDateTime, getFormattedDate} from '../../src/utils.js'
 
-describe('', () => {
+describe('Test modulo reportes', () => {
   beforeEach(function () {})
 
   it('Dirigirse al inicio', ()=>{
     cy.clearCookies()
-    cy.visit('http://192.168.0.26')
+    cy.visit('/')
     const inputUser = cy.get('#id_username')
     const inputPass = cy.get('#id_password')
     inputUser.clear(); inputUser.type('admin');
@@ -13,15 +13,14 @@ describe('', () => {
     cy.get('button[type="submit"]').click()
   })
 
-  it('Comprobar campos vacios reporte', ()=>{
-    cy.visit('http://192.168.0.26/reportes/crear/')
-    cy.get('form').submit(); 
+  it('Verificar campos vacios', ()=>{
+    cy.visit('/reportes/crear/')
+    cy.get('form').submit();
     cy.get('div.alert').should('exist');
   })
 
-
   it('Crear reporte', ()=>{
-    cy.visit('http://192.168.0.26/reportes/crear/')
+    cy.visit('/reportes/crear/')
 
     const data = {
       'id_control': getRandomInt(100, 10_000),
@@ -31,7 +30,6 @@ describe('', () => {
       'id_entrada': '36 CIA',
       'id_hora_entrada': getFormattedDateTime(),
       'id_observaciones': 'rellenando observaciones',
-      // ultimo apartado,
       'id_direccion': '1a calle 8-20',
       'id_solicitantes': 'Alan González',
       'id_escoltas': 'José Raúl',
@@ -46,9 +44,9 @@ describe('', () => {
       'id_radiotelefonista': 'admin',
       'id_formalizador': 'admin',
       'id_jefe_servicio': 'admin',
-      'id_tipo_solicitud': 'personal',
+      'id_tipo_solicitud': 'Personal',
       'id_tipo_servicio': 'Caida casual',
-      'id_hospital': 'general',
+      'id_hospital': 'General',
     }
 
     Object.entries(data).forEach(([key, value]) => {
@@ -64,7 +62,7 @@ describe('', () => {
 
 
   it('Editar reporte', ()=>{
-    cy.visit('http://192.168.0.26/reportes/')
+    cy.visit('/reportes/')
     cy.get('a.btn-warning[href*="/reportes/"]').first().click();
 
     const data = {
@@ -82,8 +80,7 @@ describe('', () => {
 
     Object.entries(data).forEach(([key, value]) => { 
       const btn = cy.get(`#${key}`)
-      btn.clear()
-      btn.type(value)
+      btn.clear(); btn.type(value)
     });
 
     cy.get('form').submit(); 
@@ -91,15 +88,19 @@ describe('', () => {
   })
 
   it('Generar PDF', ()=>{
-    cy.visit('http://192.168.0.26/reportes/')
+    cy.visit('/reportes/')
     const printBtn = cy.get('a.btn-info').first()
+    const baseUrl = Cypress.config('baseUrl')
+
     printBtn.invoke('attr', 'href').then((href) => {
-      cy.downloadFile(`http://192.168.0.26${href}`,'downloads','reporte.pdf')
+      //remove the first '/', as base url already has it.
+      href = href.substring(1)
+      cy.downloadFile(`${baseUrl}${href}`,'downloads','reporte.pdf')
     });
   })
 
   it('Filtrado de un reporte', ()=>{
-    cy.visit('http://192.168.0.26/reportes/')
+    cy.visit('/reportes/')
     cy.get('input[type="search"]').type('DATOS RANDOM')
     cy.get('.dataTables_empty').should('exist');
     cy.get('input[type="search"]').clear()

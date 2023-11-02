@@ -43,7 +43,6 @@
 - Eliminar un reporte
 
 ## Tests al modulo de informes
-- Imprimir informe vació
 - Filtrar por todos los tipos de servicios
 - Filtrar por servició especifico
 - Filtrar por fecha
