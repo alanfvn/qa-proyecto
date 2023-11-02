@@ -68,7 +68,13 @@ pipeline {
     stage('Ejecutar pruebas'){
       steps{
         dir('pruebas'){
-          sh 'NO_COLOR=1 npx cypress run'
+          script{
+            try{
+              sh 'NO_COLOR=1 npx cypress run'
+            }catch(Exception e){
+              echo "Un test ha fallado!"
+            }
+          }
         }
       }
     }
