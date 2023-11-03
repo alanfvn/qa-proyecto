@@ -84,7 +84,7 @@ pipeline {
       steps{
         dir('pruebas'){
           sh 'npx mochawesome-merge "cypress/results/*.json" > mochawesome.json'
-          sh 'npx marge mochawesome.json'
+          sh 'npx marge --inline=true mochawesome.json'
         }
       }
     }
@@ -103,7 +103,9 @@ pipeline {
       dir('pruebas'){
         script{
           def htmlContent = readFile './mochawesome-report/mochawesome.html'
-          echo "HTML Content: ${htmlContent}"
+          if (htmlContent.trim().isEmpty()) {
+              htmlContent = '$DEFAULT_CONTENT'
+          }
             emailext subject: '$DEFAULT_SUBJECT',
                      body: htmlContent,
                      recipientProviders: [

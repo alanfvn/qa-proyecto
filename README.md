@@ -29,3 +29,10 @@ npx cypress run
 # visualizar los specs mediante GUI
 npx cypress open
 ```
+
+```bash
+# ci
+npx cypress run --reporter mochawesome --reporter-options reportDir="cypress/results",overwrite=false,html=false,inline=true
+npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+npx marge --inline=true mochawesome.json
+```
