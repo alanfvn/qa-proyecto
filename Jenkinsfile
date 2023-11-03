@@ -103,7 +103,7 @@ pipeline {
       dir('pruebas'){
         script{
             emailext subject: '$DEFAULT_SUBJECT',
-                     attachmentsPattern: './mochawesome-report/mochawesome.html'
+                     attachmentsPattern: './mochawesome-report/mochawesome.html',
                      body: '$DEFAULT_CONTENT',
                      recipientProviders: [
                        [$class: 'CulpritsRecipientProvider'],
