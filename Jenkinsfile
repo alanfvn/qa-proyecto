@@ -104,7 +104,7 @@ pipeline {
           emailext(
             subject: '$DEFAULT_SUBJECT',
             body: '$DEFAULT_CONTENT',
-            attachmentsPattern: '**/*.html',
+            attachmentsPattern: '**/mochawesome.html',
             recipientProviders: [
             [$class: 'CulpritsRecipientProvider'],
             [$class: 'DevelopersRecipientProvider'],
