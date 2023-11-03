@@ -24,9 +24,13 @@ describe('Test submodulo de vehículos', () => {
     cy.visit('/recursos/vehiculos/')
     //buscar botón de edición para, ítem que no sea Admin
     const btnEdit = cy.get('tbody tr')
-    .not(':has(th[scope="row"]:contains("1"))').first()
-    .find('.btn-info')
+    .get('th[scope="row"]')
+    .contains(/^(?!1$)\d+$/).first()
+    .parent().find('.btn-info')
+
     btnEdit.click()
+
+
     // editar valores
     cy.get('#id_nombre').clear().type('VEHICULO DE PRUEBA (EDITADO)')
     cy.get('#id_descripcion').clear().type('EDITANDO DESCRIPCION DE PRUEBA VEHICULO')
@@ -38,8 +42,11 @@ describe('Test submodulo de vehículos', () => {
   it('Eliminar vehículo', ()=>{
     //buscar botón de eliminar para, ítem que no sea Admin
     const btnDelete = cy.get('tbody tr')
-    .not(':has(th[scope="row"]:contains("1"))').first()
-    .find('.btnDelete')
+    .get('th[scope="row"]')
+    .contains(/^(?!1$)\d+$/).first()
+    .parent().find('.btnDelete')
+
+
     btnDelete.click()
     //debe estar en la misma pagina.
     cy.url().should('contain', '/recursos/vehiculos/')

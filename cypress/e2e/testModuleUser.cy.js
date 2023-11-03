@@ -1,3 +1,4 @@
+
 describe('Test modulo personal', () => {
 
   beforeEach(function () {})
@@ -35,7 +36,9 @@ describe('Test modulo personal', () => {
     cy.visit('/personal/')
     // buscar usuario que no sea el Admin.
     const btnEdit = cy.get('tbody tr')
-    .not(':has(th[scope="row"]:contains("1"))').first()
+    .get('th[scope="row"]')
+    .contains(/^(?!1$)\d+$/).first()
+    .parent()
     .find('.btn-warning')
     btnEdit.click()
 
@@ -51,10 +54,14 @@ describe('Test modulo personal', () => {
   it('Eliminar usuario', ()=>{
     cy.visit('/personal/')
     // buscar usuario que no sea el Admin.
-    const btnEdit = cy.get('tbody tr')
-    .not(':has(th[scope="row"]:contains("1"))').first()
+    const btnDelUser = cy.get('tbody tr')
+    .get('th[scope="row"]')
+    .contains(/^(?!1$)\d+$/).first()
+    .parent()
     .find('.delete-user')
-    btnEdit.click()
+
+    btnDelUser.click()
+
     // esperar que se este en la pagina de usuarios 
     cy.url().should('contain','/personal/')
   })
