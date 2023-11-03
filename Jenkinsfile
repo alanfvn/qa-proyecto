@@ -102,12 +102,9 @@ pipeline {
 
       dir('pruebas'){
         script{
-          def htmlContent = readFile './mochawesome-report/mochawesome.html'
-          if (htmlContent.trim().isEmpty()) {
-              htmlContent = '$DEFAULT_CONTENT'
-          }
             emailext subject: '$DEFAULT_SUBJECT',
-                     body: htmlContent,
+                     attachmentsPattern: './mochawesome-report/mochawesome.html'
+                     body: '$DEFAULT_CONTENT',
                      recipientProviders: [
                        [$class: 'CulpritsRecipientProvider'],
                        [$class: 'DevelopersRecipientProvider'],
@@ -115,7 +112,7 @@ pipeline {
                      ], 
                      replyTo: '$DEFAULT_REPLYTO',
                      to: '$DEFAULT_RECIPIENTS',
-                     mimeType: 'text/html'
+                     mimeType: 'text/plain'
         }
       }
 
