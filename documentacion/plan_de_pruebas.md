@@ -1,6 +1,6 @@
 ## UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA FACULTAD DE INGENIERÍA EN SISTEMAS DE INFORMACIÓN
 
-**“PROYECTO FINAL (ZYPRESS)”**
+**“PROYECTO FINAL (CYPRESS)”**
 
 - ALAN DAVID GONZÁLEZ LÓPEZ (4090-19-4713)
 - MANUEL MIGUEL MIGUEL (4090-19-9063)
@@ -295,7 +295,7 @@ Estas pruebas realizadas demuestran que el software ha demostrado ser funcional 
 
 # Recomendaciones
 1) Continuar monitoreando el sistema en su entorno de producción y estar preparado para abordar cualquier problema que pueda surgir una vez que los usuarios comiencen a utilizarlo en situaciones reales.
-2) Se recomienda hacer uso de la herramienta zypress para automatización de pruebas, para aplicaciones en ecosistema web.
+2) Se recomienda hacer uso de la herramienta cypress para automatización de pruebas, para aplicaciones en ecosistema web.
 3) Se recomienda implementar pruebas para asegurarse de que las nuevas modificaciones futuras que se integren al sistema no hayan introducido errores en funcionalidades previamente probadas.\
 4) Se recomienda documentar los resultados de las pruebas y las observaciones relevantes. Esto proporcionará un registro histórico para futuras referencias y mejoras en el sistema.
 
