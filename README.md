@@ -32,7 +32,7 @@ npx cypress open
 
 ```bash
 # ci
-npx cypress run --reporter mochawesome --reporter-options reportDir="cypress/results",overwrite=false,html=false,inline=true
+npx cypress run 
 npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
 npx marge --inline=true mochawesome.json
 ```
