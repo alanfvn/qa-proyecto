@@ -94,7 +94,6 @@ pipeline {
   post {
     always {
 
-
       dir('seminario'){
         sh 'docker compose down --remove-orphans -v'
         sh 'docker compose ps'
@@ -102,17 +101,19 @@ pipeline {
 
       dir('pruebas'){
         script{
-            emailext subject: '$DEFAULT_SUBJECT',
-                     attachmentsPattern: './mochawesome-report/mochawesome.html',
-                     body: '$DEFAULT_CONTENT',
-                     recipientProviders: [
-                       [$class: 'CulpritsRecipientProvider'],
-                       [$class: 'DevelopersRecipientProvider'],
-                       [$class: 'RequesterRecipientProvider']
-                     ], 
-                     replyTo: '$DEFAULT_REPLYTO',
-                     to: '$DEFAULT_RECIPIENTS',
-                     mimeType: 'text/plain'
+          emailext(
+            subject: '$DEFAULT_SUBJECT',
+            body: '$DEFAULT_CONTENT',
+            attachmentsPattern: '**/*.html',
+            recipientProviders: [
+            [$class: 'CulpritsRecipientProvider'],
+            [$class: 'DevelopersRecipientProvider'],
+            [$class: 'RequesterRecipientProvider']
+            ], 
+            replyTo: '$DEFAULT_REPLYTO',
+            to: '$DEFAULT_RECIPIENTS',
+            mimeType: 'text/plain'
+          )
         }
       }
 
