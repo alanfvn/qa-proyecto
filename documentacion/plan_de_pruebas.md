@@ -36,13 +36,15 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 6) Verificar la confiabilidad y eficiencia del sistema en general.
 
 # Funcionalidades a probar
-## Cypress ejecutandose
+
+## Cypress ejecutándose
 ![](https://i.imgur.com/qHLLJOk.png)
 
 ## Lista de test a realizar
 ![](https://i.imgur.com/FmbUSvc.png)
 
 # Set de pruebas
+
 ## Tests de autenticación
 1) Verificar inicio de sesión con *credenciales VACÍAS*
     - No colocar nada en el campo de usuario.
@@ -64,6 +66,7 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/iuX2YVU.png)
 
 ## Tests al módulo de reportes
+
 1) Dirigirse a inicio
 ![](https://i.imgur.com/dqNQugh.png)
 2) Crear reporte
@@ -80,6 +83,7 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/u131NDp.png)
 
 ## Tests al módulo de informes
+
 1) Filtrar por todos los tipos de servicios
 ![](https://i.imgur.com/jPeUUYL.png)
 2) Filtrar por servicio específico
@@ -90,6 +94,7 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/dAozxVp.png)
 
 ## Tests al modulo de personal
+
 1) Agregar usuario
 ![](https://i.imgur.com/sRmMv5j.png)
 2) Agregar usuario repetido
@@ -100,6 +105,7 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/eTNhs7a.png)
 
 ## Tests de navegación
+
 1) Dirigirse al inicio
 ![](https://i.imgur.com/ApXUYWk.png)
 2) Dirigirse al módulo de reportes
@@ -116,6 +122,7 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/zgNliQt.png)
 
 ## Tests al modulo de recursos
+
 ### Tests de Submódulo de *Servicios*
 1) Crear servicio
 ![](https://i.imgur.com/mmYzwK3.png)
@@ -123,6 +130,7 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/5cmWXCA.png)
 3) Eliminar servicio 
 ![](https://i.imgur.com/PmFtqFS.png)
+
 ### Tests al Subódulo de *Vehículos*
 1) Crear vehículo
 ![](https://i.imgur.com/NZnwJdi.png)
@@ -140,49 +148,63 @@ El alcance de las pruebas para el sistema de registro y generación de informes 
 ![](https://i.imgur.com/v1IpYrj.png)
 
 # Recursos
+
 ## Requerimientos de Entornos – Hardware 
+
 ### Servidores de Aplicación
 - Procesador: Mínimo de 4 núcleos, preferiblemente 8 núcleos o más.
 - Memoria RAM: Mínimo 8 GB, se recomiendan 16 GB o más.
 - Almacenamiento: Mínimo 100 GB de espacio en disco duro.
 - Sistema Operativo: Linux o Windows, dependiendo de las preferencias del sistema y software.
+
 ### Bases de Datos
 - Procesador: Dependerá de la carga de trabajo, pero se recomiendan múltiples núcleos.
 - Memoria RAM: Mínimo 8 GB, se recomiendan 16 GB o más.
 - Almacenamiento: Capacidad suficiente para la base de datos y las copias de seguridad.
+
 ### Equipos de PC para Testers
 - Procesador: Dual-core o superior.
 - Memoria RAM: Mínimo 4 GB, se recomiendan 8 GB o más.
 - Almacenamiento: Al menos 250 GB de espacio en disco duro.
 - Sistema Operativo: Windows 10 o una distribución de Linux compatible con las herramientas de pruebas.
+
 ### Conectividad a la Red
 - Conexión a Internet: Banda ancha con una velocidad razonable para la descarga de actualizaciones y acceso a recursos en línea.
+
 ### Accesos
 - Cuentas de usuario con permisos adecuados para realizar pruebas.
 - Requisitos de hardware y sistema operativo específicos según las plataformas móviles (por ejemplo, Android o iOS).
+
 ### Equipamiento de prueba adicional:
 - Las características mínimas variarán según el equipo o software específico utilizado para las pruebas de integración, carga o rendimiento.
 
 ## Requerimientos de Entornos – Software 
+
 ### Software de pruebas
 - Software de Pruebas: Cypress
 - Versión de Cypress: [Especificar la versión de Cypress que se utilizará, por ejemplo, "Cypress 6.7.0"]
 - Para instalar Cypress y configurarlo, sigue la documentación oficial de Cypress: [Proporcionar el enlace a la documentación oficial de Cypress]
+
 ### Navegadores web compatibles
 - Navegadores Web Compatibles: Google Chrome, Mozilla Firefox, Microsoft Edge
 - Se recomienda utilizar la última versión de cada navegador compatible con Cypress.
+
 ### Sistema operativo
 - Sistema Operativo: Windows 10, macOS, Linux
 - Asegurarse de que el sistema operativo esté actualizado y sea compatible con Cypress.
+
 ### Requisitos de servidores
 - No se requieren servidores específicos para Cypress. La ejecución de pruebas en Cypress se realiza localmente en el entorno de desarrollo.
+
 #### Base de datos
 - Sistema de Gestión de Bases de Datos (DBMS): SQLite
 - Versión de SQLite: [Especificar la versión de SQLite utilizada, por ejemplo, "SQLite 3.36.0"]
 - SQLite es una base de datos de archivo que se utiliza comúnmente en aplicaciones web de Django. Asegurarse de que SQLite esté configurado y funcione correctamente con Django
+
 ### Herramientas de registro de rrrores
 - Herramienta de Registro de Errores: [Especificar la herramienta que se utilizará para registrar errores, por ejemplo, "JIRA", "Bugzilla", "Trello", etc.]
 - Proporcionar detalles sobre cómo acceder y utilizar esta herramienta para gestionar errores específicos de Cypress.
+
 ### Otro Software Relevante
 - Lenguaje de Programación: Python
 - Framework de Desarrollo Web: Django
@@ -200,6 +222,7 @@ Las siguientes herramientas y recursos serán necesarios para llevar a cabo las 
 - Sistema de gestión de bases de datos (DBMS): SQLite
 - Versión de SQLite: [Especificar la versión de SQLite utilizada, por ejemplo, "SQLite 3.36.0"]
 - Herramienta de registro de errores: [Especificar la herramienta que se utilizará para registrar errores, por ejemplo, "JIRA", "Bugzilla", "Trello", etc.]
+
 ## Personal
 El equipo necesario para llevar a cabo las actividades de pruebas incluye:
 - Un (1) Líder de pruebas (Alan David)
@@ -208,29 +231,41 @@ El equipo necesario para llevar a cabo las actividades de pruebas incluye:
 
 # Planificación y Organización
 Los procedimientos y la metodología de pruebas que se emplearán durante la ejecución del plan de pruebas de software se detallan a continuación:
+
 ### Revisión del documento de plan de pruebas
 - El Líder de pruebas, en conjunto con los analistas de pruebas, revisará el documento de plan de pruebas para comprender los objetivos, alcance y requisitos del sistema a probar.
+
 ### Configuración del entorno de pruebas:
 - Se asegurará de que los entornos de hardware y software necesarios estén debidamente configurados, incluyendo servidores de aplicación, bases de datos y equipos de prueba.
+
 ### Preparación de datos de prueba:
 - Se generarán datos de prueba realistas que se utilizarán durante las pruebas. Esto incluirá datos de emergencias, usuarios, vehículos, hospitales y otros elementos necesarios.
+
 ### Diseño de casos de pruebas:
 - El equipo de analistas de pruebas diseñará casos de prueba para cubrir todas las funcionalidades a probar. Los casos de prueba se basarán en los requisitos del sistema.
+
 ### Ejecución de pruebas manuales:
 - Los analistas de pruebas ejecutarán manualmente los casos de prueba diseñados, registrando los resultados y cualquier problema que se detecte al momento de realizar las pruebas. 
 - Se probarán todas las funcionalidades, incluyendo autenticación, navegación, módulos de reportes, informes, personal y recursos.
+
 ### Automatización de pruebas:
 - El especialista en automatización de pruebas desarrollará scripts de pruebas automatizadas utilizando la herramienta Cypress. Estos scripts se centrarán en las áreas que integran el sistema y se ejecutarán de manera continua para identificar posibles problemas.
+
 ### Registro de errores:
 - Cualquier error detectada durante las pruebas manuales o automatizadas se registrará en la herramienta de registro de errores especificada en los Requerimientos de Entornos – Software, por ultimo se proporcionará información detallada sobre cada error y su gravedad.
+
 ### Evaluación de seguridad:
 - Se evaluará la seguridad del sistema para garantizar la protección de la confidencialidad y la integridad de los datos sensibles.
+
 ### Informe de resultados de pruebas:
 - El líder de pruebas preparará un informe detallado de los resultados de las pruebas, que incluirá resúmenes de los casos de prueba, errores encontrados, estadísticas de ejecución y cualquier observación importante.
+
 ### Revisión y aprobación de pruebas:
 - El informe de resultados de pruebas se revisará con el equipo de desarrollo y se obtendrá la aprobación para proceder con las correcciones y mejoras necesarias.
+
 ### Retesting:
 - Después de que se realicen las correcciones y mejoras, se llevarán a cabo pruebas de retesting para asegurarse de que los errores se han solucionado de manera satisfactoria.
+
 ### Cierre de pruebas:
 - Una vez que todas las pruebas hayan sido completadas y los errores se hayan corregido, se procederá al cierre de las pruebas y se considerará el sistema listo para su implementación.
 
@@ -250,22 +285,31 @@ Las premisas relacionadas con las tareas de pruebas de software, incluyendo limi
 
 ### Disponibilidad de recursos:
 - Se asume que los recursos humanos necesarios, incluyendo el equipo de pruebas y el personal de desarrollo, estarán disponibles según lo programado en el plan.
+
 ### Acceso a entornos de pruebas:
 - Se espera que los entornos de prueba, incluyendo servidores de aplicación, bases de datos y equipos de prueba, estén disponibles y debidamente configurados para realizar las pruebas de acuerdo a lo especificado.
+
 ### Datos de prueba:
 - Se asume que se contarán con datos de prueba realistas y representativos para llevar a cabo las pruebas de software. Estos datos deberán estar disponibles en el momento programado.
+
 ### Metodología de pruebas
 - Se seguirá la metodología de pruebas establecida en este plan, que incluye la revisión del documento de plan de pruebas, la configuración del entorno de pruebas, la preparación de datos de prueba, el diseño de casos de prueba, la ejecución de pruebas manuales y automatizadas, la evaluación de seguridad, la revisión de resultados.
+
 ### Herramienta de pruebas:
 - Se utilizará la herramienta de pruebas Cypress, en la versión especificada, para la automatización de pruebas. La herramienta de registro de errores especificada en los Requerimientos de Entornos – Software se utilizará para gestionar los errores detectados durante las pruebas.
+
 ### Navegadores web compatibles:
 - Se trabajará con los navegadores web compatibles mencionados en los Requerimientos de Entornos – Software, y se espera que estos navegadores estén debidamente configurados y actualizados.
+
 ### Sistema operativo:
 - El sistema operativo en los equipos de prueba y desarrollo deberá ser compatible con Cypress y las herramientas utilizadas en el proceso de pruebas.
+
 ### Base de datos:
 - Se utilizará el sistema de gestión de bases de datos SQLite en la versión especificada, y se asume que estará configurado correctamente para el funcionamiento del sistema.
+
 ### Lenguaje de programación y framework:
 - Se utilizará Python como lenguaje de programación y Django como framework de desarrollo web, y se espera que estén correctamente configurados en el entorno de desarrollo.
+
 ### Acceso a la herramienta de registro de errores:
 - Los miembros del equipo de pruebas tendrán acceso a la herramienta de registro de errores especificada y estarán capacitados para registrar y gestionar los errores de manera adecuada.
 
@@ -294,7 +338,7 @@ Para este testing realizada al sistema de registro y generación de informes ha 
 Estas pruebas realizadas demuestran que el software ha demostrado ser funcional y confiable de acuerdo a los criterios de prueba establecidos en el plan de pruebas, es importante considerar esto ya que nos permite  o siguiere que el software está listo para producción. Es importante seguir monitoreando el software en su entorno de producción y estar preparado para abordar cualquier problema que pueda surgir una vez que los usuarios comiencen a utilizarlo en situaciones reales. 
 
 # Recomendaciones
-1) Continuar monitoreando el sistema en su entorno de producción y estar preparado para abordar cualquier problema que pueda surgir una vez que los usuarios comiencen a utilizarlo en situaciones reales.
+1) Continuar monitorizando el sistema en su entorno de producción y estar preparado para abordar cualquier problema que pueda surgir una vez que los usuarios comiencen a utilizarlo en situaciones reales.
 2) Se recomienda hacer uso de la herramienta cypress para automatización de pruebas, para aplicaciones en ecosistema web.
 3) Se recomienda implementar pruebas para asegurarse de que las nuevas modificaciones futuras que se integren al sistema no hayan introducido errores en funcionalidades previamente probadas.\
 4) Se recomienda documentar los resultados de las pruebas y las observaciones relevantes. Esto proporcionará un registro histórico para futuras referencias y mejoras en el sistema.
@@ -316,33 +360,3 @@ Una matriz que define roles y responsabilidades en un proyecto, especificando qu
 
 # Referencias [pendiente] Aqui va la parte de excel de plan de pruebas y otros si existiera
 Lista de todos los documentos que pueden citarse como apoyo o para ampliar el contenido del plan de pruebas.
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
