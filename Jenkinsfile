@@ -71,7 +71,7 @@ pipeline {
         dir('pruebas'){
           script{
             try{
-              sh 'NO_COLOR=1 npx cypress run --reporter mochawesome --reporter-options reportDir="cypress/results",overwrite=false,html=false,json=true'
+              sh 'NO_COLOR=1 npm run cypress:test'
             }catch(Exception e){
               echo "Un test ha fallado!"
             }
@@ -79,16 +79,6 @@ pipeline {
         }
       }
     }
-
-    stage('Crear reporte'){
-      steps{
-        dir('pruebas'){
-          sh 'npx mochawesome-merge "cypress/results/*.json" > mochawesome.json'
-          sh 'npx marge --inline=true mochawesome.json'
-        }
-      }
-    }
-
   }
 
   post {
